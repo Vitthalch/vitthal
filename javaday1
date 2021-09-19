@@ -1,0 +1,58 @@
+1.	Mention the difference between interpreter and compiler
+Ans.	Interpreter
+		- Interpreter takes only one line of code at a time
+		- There is no Byte code
+		- It is slower than Compiler
+		- If there is any Error all errors in the program will be displayed at a time
+		- Memory requirement is less
+		- Examples: Python
+	Compiler
+		- Compiler takes total program at a time
+		- There is a Byte code
+		- It is faster than Interpreter
+		- If there is any Error they will be displayed after each line of program
+		- Memory requirement is more
+		- Example: C, C++, Java
+*/
+
+
+/*
+2. Define a class Student with following members:
+	int roll, String name, float marks.
+	
+	input() to take input of the details
+	display() to all details of a student.
+	
+class Student				// Defining a class student
+{
+	int roll;				// Member of a class student
+	String name;			// Member of a class student
+	float marks;			// Member of a class student
+	
+	void input()			// Method of class student
+	{
+		roll = 8;			// Assigning value for variable roll
+		name = "Veerendra";	// Assigning value for variable name
+		marks = 88;			// Assigning value for variable marks
+	}
+	
+	void display()			// Method of class student
+	{
+		System.out.println("*** Details of students are *** \n");	//printing
+		System.out.println("	Roll number: " + roll);		// printing roll
+		System.out.println("	Name: " + name);			// printing name
+		System.out.println("	marks: " + marks);			// printing marks
+	}
+}
+
+class student_details				// class 
+{
+	public static void main(String[] args)	// main method
+	{
+		Student ob=new Student();			// object for Student class
+		
+		ob.input();							// obtaining inputs from input method
+		ob.display();						// printing details from details method
+	}
+
+}
