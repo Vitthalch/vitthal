@@ -1,0 +1,21 @@
+import java.util.Scanner;
+class Demo {
+    String s;
+    int x;
+    int y;
+}
+class Main{
+    public static void main (String[] args) {
+     Demo ob = new Demo();
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a value: ");
+        ob.x = sc.nextInt();
+        Scanner n1 = new Scanner(System.in);
+        System.out.print("Enter a value: ");
+        ob.y = n1.nextInt();
+        System.out.print("Addition=x+y= "+(ob.x+ob.y));
+        
+        sc.nextLine();  //consuming the \n in buffer
+         
+    }
+}
